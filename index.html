@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 2</title>
+</head>
+
+<body>
+
+    <h1 class="title" id="lesson">LESSON 2</h1>
+    <!-- +Header -->
+    <header>
+        <nav>
+            <ol>
+                <li><a href="#structure__title">Basic structure HTML (базовая структура)</a></li>
+                <li><a href="#heading__title">Heading (заголовки)</a></li>
+                <li><a href="#list__title">Lists (списки)</a></li>
+                <li><a href="#tags__title">Type of tags (типи тегів)</a></li>
+                <li><a href="#nesting__title">Nesting tags (вкладеність тегів)</a></li>
+                <li><a href="#contacts__title">Contacts & links (контакти та посилання)</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <!-- +1 Basic structure HTML-->
+        <div class="structure">
+            <a href="#lesson">
+                <h2 class="sub__title" id="structure__title">1. Basic structure HTML</h2>
+            </a>
+            <div style="display: flex; gap:50px">
+                <div>
+                    <img src="./img/structure_1.png" alt="Basic structure HTML">
+                </div>
+                <div>
+                    <img src="./img/structure_2.png" alt="Basic structure HTML">
+                </div>
+            </div>
+            <p><code>&lt;!DOCTYPE html&gt;</code></p>
+            <p>
+                Каждый HTML-документ начинается с декларации типа документа или «доктайпа». Тип документа необходим, чтобы браузер мог определить версию HTML и правильно отобразить страницу.
+            </p>
+            <p>Найпростіша HTML-сторінка складається щонайменше з трьох тегів: <code>&lt;html&gt;</code>, <code>&lt;head&gt;</code> і <code>&lt;body&gt;</code>. Тег <code>&lt;head&gt;</code> зазвичай
+                містить заголовок, ключові слова, опис сторінки та інші службові дані. Також у ньому підключаються зовнішні ресурси, наприклад, стилі. Вміст цього тега не відображається
+                безпосередньо на сторінці. А в тезі <code>&lt;body&gt;</code> зберігається зміст сторінки, що відображається у вікні браузера.</p>
+        </div>
+        <!-- + 2 Heading -->
+        <div class="heading">
+            <a href="#lesson">
+                <h2 class="sub__title" id="heading__title">2. Heading (заголовки)</h2>
+            </a>
+            <p>HTML заголовки визначаються тегами від <code>&lt;h1&gt;</code> до <code>&lt;h6&gt;</code>, наприклад: </p>
+            <h1>Привіт всім, я заголовок 1-го рівня</h1>
+            <h2>Привіт всім, я заголовок 2-го рівня</h2>
+            <h3>Привіт всім, я заголовок 3-го рівня</h3>
+            <h4>Привіт всім, я заголовок 4-го рівня</h4>
+            <h5>Привіт всім, я заголовок 5-го рівня</h5>
+            <h6>Привіт всім, я заголовок 6-го рівня</h6>
+            <p>
+                <code>&lt;h1&gt;</code> визначає найбільш важливі заголовки, а <code>&lt;h6&gt;</code> визначає найменш важливі заголовки (<code>&lt;h1&gt;</code> заголовки повинні бути основними
+                заголовками, потім слідують заголовки <code>&lt;h2&gt;</code> і так далі).
+            </p>
+            <p>Пошукові системи використовують ваші заголовки для індексації структури і змісту веб-сторінок. Тому важливо використовувати заголовки, щоб показати структуру документа.</p>
+            <p>Теги <code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code> відносяться до блокових елементів, вони завжди починаються з нового рядка, а після них інші елементи відображаються на
+                наступному рядку. Крім того,
+                перед заголовком і після нього додається порожній простір.</p>
+        </div>
+        <!-- +3 Lists -->
+        <div class="list">
+            <a href="#lesson">
+                <h2 class="sub__title" id="list__title">3. Lists (списки)</h2>
+            </a>
+            <div style="display: flex; gap: 50px; justify-content: center;">
+                <div>
+                    <p>ul - Unordered Lists <br> (маркований список)</p>
+                    <ul>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ul>
+                    <img src="./img/ul.png" alt="маркований список">
+                </div>
+                <div>
+                    <p>ol - Ordered Lists <br> (нумерований список)</p>
+                    <ol>
+                        <li>Coffee</li>
+                        <li>Tea</li>
+                        <li>Milk</li>
+                    </ol>
+                    <img src="./img/ol.png" alt="нумерований список">
+                </div>
+            </div>
+        </div>
+        <!-- +Type of tags -->
+        <div class="tags">
+            <a href="#lesson">
+                <h2 class="sub__title" id="tags__title">4. Type of tags (типи тегів)</h2>
+            </a>
+            <ul>
+                <li>
+                    <span class="tags__span">блочний</span> тег займатиме усю ширину батьківського елементу. Висоту — згідно контенту. Наступний, після блочного елементу, об'єкт, буде виведений з
+                    нового рядка.
+                </li>
+                <li>
+                    <span class="tags__span">рядковий</span> тег займатиме ширину згідно контенту. Висоту — згідно контенту. Наступний, після рядкового елементу, рядковий об'єкт, буде намагатись
+                    розміститись з ним у рядок.
+                </li>
+                <li>
+                    Ширина <span class="tags__span">блочно-рядкового</span> тегу займає ширину по ширині контенту всередині. Висота формується контентом всередині. Блочно-рядковий тег намагається
+                    розміститись в рядок разом з іншими рядковими тегами або текстом.
+                </li>
+            </ul>
+            <ul>
+                <li> <span class="tags__span">Блочні теги</span> - div, header, main, footer, h1-h6, p, ul, ol, li</li>
+                <li> <span class="tags__span">Рядкові теги</span> - span, mark, a, br</li>
+                <li> <span class="tags__span">Блочно-рядковий</span> - img</li>
+            </ul>
+        </div>
+        <!-- +5 Nesting tags -->
+        <div class="nesting_tags">
+            <a href="#lesson">
+                <h2 class="sub__title" id="nesting__title">5. Nesting tags (вкладеність тегів)</h2>
+            </a>
+            <img src="./img/nesting_tags.png" alt="скриншот вкладеність тегів" height=500>
+            <p>У цьому прикладі ми можемо побачити, що теги <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;ul&gt;</code>, <code>&lt;li&gt;</code>, <code>&lt;main&gt;</code>,
+                <code>&lt;article&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code> та <code>&lt;footer&gt;</code> вкладені один в одного, створюючи логічну ієрархічну структуру
+                веб-сторінки.
+            </p>
+            <h3>Правила вкладеності тегів:</h3>
+            <p>
+                1. Теги повинні бути належним чином закриті в зворотному порядку. Наприклад, якщо ми відкриваємо теги <code>&lt;div&gt;</code><code>&lt;p&gt;</code>, ми повинні закрити їх в
+                зворотному порядку: <code>&lt;/p&gt;</code><code>&lt;/div&gt;</code>.
+            </p>
+            <p>
+                2. Деякі теги, такі як <code>&lt;img&gt;</code>, <code>&lt;br&gt;</code>, <code>&lt;hr&gt;</code>, не потребують закриття.
+            </p>
+            <p>
+                3. Вкладені теги повинні бути повністю вкладені в батьківський тег. Наприклад, <code>&lt;p&gt;</code><code>&lt;div&gt;</code>Текст<code>&lt;/p&gt;</code><code>&lt;/div&gt;</code> є
+                неправильним, оскільки тег <code>&lt;div&gt;</code> не повністю вкладений в <code>&lt;p&gt;</code>.
+            </p>
+            <p>
+                Правильна вкладеність тегів є важливою для забезпечення належної структури і семантики веб-сторінки, а також для коректного відображення її контенту в різних браузерах.
+            </p>
+        </div>
+        <!-- +6 -->
+        <div class="contacts">
+            <a href="#lesson">
+                <h2 class="sub__title" id="contacts__title">6. Contacts & links (контакти та посилання)</h2>
+            </a>
+            <p>
+                <a href="contact.html" target="_blank">Перейти на страницу "Contacts"</a>
+            </p>
+            <p>
+                <a href="links.html" target="_blank">Перейти на страницу "Links"</a>
+            </p>
+        </div>
+    </main>
+    <footer>
+        <h4>test</h4>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+body {
+    background-color: rgb(255, 226, 176);
+    font-size: 24px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+code {
+    background-color: #ecf0f3;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+/* .container {
+    width: 1200px;
+    margin: 0 auto;
+} */
+
+.title {
+    font-size: 60px;
+    text-align: center;
+    color: #002aff;
+}
+
+div.structure img {
+    width: 800px;
+    height: 400px;
+    object-fit: contain;
+}
+
+
+nav,
+.sub__title {
+    font-size: 32px;
+    color: rgb(13, 152, 13);
+}
+
+.sub__title {
+    text-align: center;
+}
+
+div.tags span {
+    color: green;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+div.tags li:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 100px 0px 25px 0px;
+    background: #968f8f;
+}
