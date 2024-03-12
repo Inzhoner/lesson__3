@@ -1,5 +1,45 @@
 @import url("reset.css");
 
-p {
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 20px auto;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+* {
+  color: rgb(139, 122, 122);
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.title {
+  text-align: center;
+  color: blue;
+}
+
+.header li {
+  color: rgb(214, 16, 138);
+}
+
+.subtitle {
+  text-align: center;
+  color: blueviolet;
+}
+
+.subtitle + p {
+  color: rgb(63, 188, 73);
+}
+
+/* ! перший параграф зеленим тому що класс+тег вище має вище пріоритет  */
+[class*="__text"] {
   color: red;
 }
+
+
+
+
