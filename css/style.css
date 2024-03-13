@@ -60,4 +60,17 @@ body {
     color: rgb(20, 204, 204);
 }
 
+/* +BLOCK-6 */
+/* - Усі теги P першого рівня всередині <div class="block-6__box"> (звернення відбувається  до усіх дітей в яких батько .block-6__box): */
+
+.block-6__box-1 > p {
+    color: green;
+}
+
+/*- .class .class */
+
+/*- Усі об'єкти з класом .test-2 всередині об'єктів з класом .test-1 */
+.test-1 .test-2 {
+    color: darkblue;
+}
 
